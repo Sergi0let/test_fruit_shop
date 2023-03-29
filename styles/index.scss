@@ -1,0 +1,91 @@
+@import 'utils/vars.scss';
+@import './utils/reset.scss';
+@import 'utils/brackpoints.scss';
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+}
+
+body {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  border: 1px solid $dark-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  transition: all 0.3s ease;
+}
+
+html.menu-open {
+  .card-section,
+  .fullscreen {
+    opacity: 0.2;
+  }
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  // flex: 0 0 auto;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  max-width: $desktopWidth;
+}
+
+.fullscreen {
+  // min-height: calc(100vh - 180px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@import './header.scss';
+@import './body.scss';

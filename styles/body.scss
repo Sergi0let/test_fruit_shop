@@ -1,0 +1,498 @@
+// 3. Main
+.section-main {
+  width: 100%;
+  height: 698px;
+  max-width: 1440px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  &__wrapper {
+    position: relative;
+    height: 100%;
+    background: url('../images/main-section/bg.png') center/cover no-repeat;
+    img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      opacity: 0.7;
+
+      @include to-table {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__fruit {
+    position: absolute;
+    z-index: 0;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    &_rasberry {
+      z-index: -1;
+      width: 260px;
+      height: 260px;
+      bottom: -62px;
+      right: -252px;
+    }
+
+    &_blackberry {
+      width: 110px;
+      height: 120px;
+      top: -180px;
+      right: -180px;
+    }
+
+    &_dinner {
+      width: 190px;
+      height: 197px;
+      top: -180px;
+      left: -200px;
+    }
+
+    &_strawberry {
+      width: 134px;
+      height: 120px;
+      top: -100px;
+      left: 560px;
+    }
+
+    &_basket {
+      width: 876px;
+      height: 576px;
+      bottom: -565px;
+      left: -240px;
+    }
+  }
+
+  &__content {
+    min-height: 100%;
+  }
+
+  &__column {
+    position: relative;
+
+    &_left {
+      position: absolute;
+      width: 50%;
+      top: 176px;
+      left: 0px;
+    }
+
+    &_right {
+      position: absolute;
+      width: 100%;
+      padding: 0 15px;
+      top: 50px;
+      right: 0px;
+
+      @include to-sm {
+        top: 100px;
+      }
+
+      @include to-table {
+        width: 50%;
+        top: 142px;
+      }
+
+      @include to-ld {
+        top: 178px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 46px;
+    line-height: 110%;
+    color: #ffffff;
+    margin: 0;
+
+    @include to-sm {
+      font-size: 60px;
+    }
+  }
+
+  &__btn {
+    font-family: $secondaryFont;
+    width: 295px;
+    height: 80px;
+    background: #fbc400;
+    border: 4px solid #fbc400;
+    box-shadow: 0px 29px 10px -20px rgba(255, 205, 49, 0.35);
+    border-radius: 80px;
+    border: 4px solid #fbc400;
+    font-size: 27px;
+    line-height: 120%;
+    color: #dd2343;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(
+        310.89deg,
+        rgba(251, 197, 0, 0.3) 43.38%,
+        rgba(255, 255, 255, 0) 70.08%
+      );
+      color: #fff;
+    }
+
+    @include to-sm {
+      width: 340px;
+    }
+  }
+
+  &__benefits {
+    position: relative;
+    z-index: 1;
+    margin-top: -60px;
+    padding: 0 15px;
+    max-width: $lgDesktopWidth;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.benefits {
+  max-width: 1130px;
+  margin-bottom: 56px;
+  &__block {
+    background: #ffffff;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    padding: 5px;
+  }
+
+  &__list {
+    border-radius: 25px;
+    border: 2px solid $red-color;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 4px;
+    display: grid;
+    column-gap: 29px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @include to-table {
+      padding: 15px 30px;
+    }
+
+    @include to-ld {
+      grid-template-columns: 1fr 2px 1fr 2px 1fr 2px 1fr;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    @include to-table {
+      flex-direction: row;
+      gap: 15px;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+
+      @include to-sm {
+        width: 72px;
+        height: 72px;
+      }
+    }
+  }
+
+  &__benefit {
+    font-family: $secondaryFont;
+    font-weight: 500;
+    font-size: 12px;
+    color: $green-color;
+    text-align: center;
+
+    @include to-sd {
+      white-space: nowrap;
+      font-size: 15px;
+    }
+
+    @include to-ld {
+      font-size: 19px;
+    }
+  }
+
+  &__separator {
+    display: none;
+
+    @include to-ld {
+      display: block;
+      width: 2px;
+      height: 81px;
+      background: $red-color;
+      opacity: 0.1;
+      border-radius: 2px;
+    }
+  }
+}
+
+// 4. Section-2
+.card-section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__title {
+    font-size: 38px;
+    padding: 24px 40px;
+    text-align: center;
+    color: $red-color;
+    margin: 0;
+    line-height: 120%;
+
+    @include to-sm {
+      font-size: 55px;
+      padding-top: 45px;
+      padding-bottom: 58px;
+    }
+  }
+
+  &__bottom {
+    width: $lgDesktopWidth;
+    margin: 0 auto;
+  }
+
+  &__fruits {
+    margin-bottom: -67px;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+    margin-bottom: 20px;
+
+    img {
+      margin-right: 8px;
+      transition: all 0.3s ease;
+    }
+
+    button {
+      border: 2px solid $red-color;
+      border-radius: 50px;
+      color: $red-color;
+      padding-right: 25px;
+      padding-left: 25px;
+      line-height: 50px;
+      font-size: 23px;
+      font-weight: 400;
+      background: rgba(219, 30, 71, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+
+      @include to-lm {
+        padding-right: 65px;
+        padding-left: 65px;
+        line-height: 65px;
+      }
+
+      &:hover {
+        background: $red-color;
+        color: #fff;
+        img {
+          content: url('../images/items/icon-list-white.svg');
+        }
+      }
+    }
+  }
+}
+
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 30px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+  }
+
+  &::before {
+    background: url('../images/items/fruit-5.png') center no-repeat;
+    width: 250px;
+    height: 350px;
+    top: 90px;
+    left: -260px;
+  }
+
+  &::after {
+    background: url('../images/items/fruit-6.png') center no-repeat;
+    width: 230px;
+    height: 345px;
+    bottom: -90px;
+    right: -280px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 379px;
+    background: #ffffff;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 10px;
+
+    @include to-sm {
+      width: 254px;
+    }
+  }
+
+  &__tipe-wrapper {
+    text-align: right;
+  }
+
+  &__tipe {
+    display: inline-block;
+    padding: 0px 8px;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 21px;
+    color: $red-color;
+    border: 1px solid #db1e46;
+    border-radius: 15px;
+
+    &_baskets {
+      border-color: $green-color;
+      color: $green-color;
+    }
+
+    &_sushi {
+      border-color: $dark-color;
+      color: $dark-color;
+    }
+  }
+
+  &__img-wrapper {
+    margin: 0 auto;
+    width: 234px;
+    height: 174px;
+    margin-top: 10px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+
+  &__title {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 120%;
+    color: #363636;
+    padding: 0 7px;
+    white-space: nowrap;
+  }
+
+  &__price-block {
+    display: flex;
+    column-gap: 10px;
+    padding: 0 7px;
+  }
+
+  &__price {
+    margin-top: 13px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 120%;
+
+    span {
+      font-weight: 400;
+      color: $green-color;
+      &:last-child {
+        font-weight: 700;
+        color: $red-color;
+      }
+    }
+
+    img {
+      padding-right: 0px;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.buttons-block {
+  display: flex;
+  margin-top: 30px;
+
+  &__btn {
+    stroke: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    gap: 17px;
+
+    &_buy {
+      padding: 9px 23px;
+      background: $red-color;
+      color: #fff;
+      border: 2px solid $red-color;
+      border-radius: 50px;
+
+      img {
+        width: 18px;
+        height: 18px;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        background: #fff;
+        color: $red-color;
+        img {
+          content: url('../images/items/icon-cart-red.svg');
+        }
+      }
+    }
+
+    &_info {
+      margin-left: 2px;
+      color: $red-color;
+
+      p {
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        p {
+          border-color: $red-color;
+        }
+      }
+    }
+  }
+}

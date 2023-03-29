@@ -1,0 +1,41 @@
+@import './vars.scss';
+
+@mixin to-phone {
+  @media (min-width: $phoneWidth) {
+    @content;
+  }
+}
+
+@mixin to-sm {
+  @media (min-width: $smTableWidth) {
+    @content;
+  }
+}
+@mixin to-lm {
+  @media (min-width: $tableWidth) {
+    @content;
+  }
+}
+
+@mixin to-table {
+  @media (min-width: $xsDesktopWidth) {
+    @content;
+  }
+}
+
+@mixin to-sd {
+  @media (min-width: $smDesktopWidth) {
+    @content;
+  }
+}
+
+@mixin to-ld {
+  @media (min-width: $desktopWidth) {
+    @content;
+  }
+}
+@mixin to-lg {
+  @media (min-width: $lgDesktopWidth) {
+    @content;
+  }
+}

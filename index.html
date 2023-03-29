@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <div class="wrapper">
+    <!-- container -->
+    <div class="contacts">
+      <div class="container contacts__wrapper">
+        <button class="contacts__btn-call">Call me back</button>
+        <ul class="contacts__list">
+          <li class="contacts__item item-link">
+            <a class="item-link__link" href="tel:+380996230466"
+              ><img
+                class="item-link__img"
+                src="./images/header-img/icon-tel.svg"
+                alt="contact_us"
+              /><span>054-818-3555</span></a
+            >
+          </li>
+          <li class="contacts__item item-link">
+            <a class="item-link__link" href="mailto:s.vashkevych@gmail.com"
+              ><img
+                class="item-link__img"
+                src="./images/header-img/icon-mail.svg"
+                alt="contact_us"
+              /><span>service@10pri.biz</span></a
+            >
+          </li>
+          <li class="contacts__item item-link">
+            <a class="item-link__link" href="https://wa.me/+380996230466" target="_blank"
+              ><img
+                class="item-link__img"
+                src="./images/header-img/icon-whats-up.svg"
+                alt="contact_us"
+              /><span>WhatsApp</span></a
+            >
+          </li>
+          <li class="contacts__item item-link">
+            <a
+              class="item-link__link"
+              href="https://www.google.com/maps?q=50.445066,30.661315"
+              target="_blank"
+              ><img
+                class="item-link__img"
+                src="./images/header-img/icon-location.svg"
+                alt="contact_us"
+              /><span>Delivery cost by region</span></a
+            >
+          </li>
+        </ul>
+        <div class="contacts__btn-lang lang-btn">
+          <div class="lang-btn__wrapper">
+            <button class="lang-btn__btn">UA</button>
+            <button class="lang-btn__btn _active">ENG</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+
+    <header class="header">
+      <div class="header__block container">
+        <a class="header__logo" href="#">
+          <img src="./images/header-img/main-logo.svg" alt="fruit boom" />
+        </a>
+        <nav class="header__list list-items">
+          <ul class="list-items__list">
+            <li class="list-items__item">
+              <a class="list-items__link" href="#">Catalog</a>
+              <img src="./images/header-img/down-arrow.svg" alt="push arrow" />
+            </li>
+            <li class="list-items__item"><a class="list-items__link" href="#">Promotions</a></li>
+            <li class="list-items__item"><a class="list-items__link" href="#">About Us</a></li>
+            <li class="list-items__item"><a class="list-items__link" href="#">Blog</a></li>
+          </ul>
+          <div class="list-items__search-wrapper">
+            <img src="./images/header-img/icon-search.svg" alt="" />
+          </div>
+
+          <div class="cart">
+            <div class="cart__block">
+              <span class="cart__sum">$ 55 414</span>
+              <img class="cart__img" src="./images/header-img/icon-cart.svg" alt="" />
+            </div>
+            <div class="cart__amount"><span>55</span></div>
+          </div>
+
+          <button type="button" class="menu__icon icon-menu">
+            <span></span>
+          </button>
+        </nav>
+      </div>
+
+      <nav class="menu">
+        <ul class="menu__swap-features">
+          <li class="list-items__item">
+            <a class="list-items__link" href="#">Catalog</a>
+            <img src="./images/header-img/down-arrow.svg" alt="push arrow" />
+          </li>
+          <li class="list-items__item"><a class="list-items__link" href="#">Promotions</a></li>
+          <li class="list-items__item"><a class="list-items__link" href="#">About Us</a></li>
+          <li class="list-items__item"><a class="list-items__link" href="#">Blog</a></li>
+        </ul>
+        <ul class="menu__swap-contact">
+          <li class="contacts__item item-link">
+            <a class="item-link__link" href="tel:+380996230466"
+              ><img
+                class="item-link__img"
+                src="./images/header-img/icon-tel.svg"
+                alt="contact_us"
+              /><span>054-818-3555</span></a
+            >
+          </li>
+          <li class="contacts__item item-link">
+            <a class="item-link__link" href="mailto:s.vashkevych@gmail.com"
+              ><img
+                class="item-link__img"
+                src="./images/header-img/icon-mail.svg"
+                alt="contact_us"
+              /><span>service@10pri.biz</span></a
+            >
+          </li>
+          <li class="contacts__item item-link">
+            <a class="item-link__link" href="https://wa.me/+380996230466" target="_blank"
+              ><img
+                class="item-link__img"
+                src="./images/header-img/icon-whats-up.svg"
+                alt="contact_us"
+              /><span>WhatsApp</span></a
+            >
+          </li>
+          <li class="contacts__item item-link">
+            <a
+              class="item-link__link"
+              href="https://www.google.com/maps?q=50.445066,30.661315"
+              target="_blank"
+              ><img
+                class="item-link__img"
+                src="./images/header-img/icon-location.svg"
+                alt="contact_us"
+              /><span>Delivery cost by region</span></a
+            >
+          </li>
+        </ul>
+        <div class="menu__search">
+          <div class="list-items__search-wrapper list-items__search-wrapper__menu">
+            <img src="./images/header-img/icon-search.svg" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="fullscreen">
+      <section class="wrapper-content">
+        <div class="section-main">
+          <div class="section-main__wrapper">
+            <div class="section-main__content container">
+              <div class="section-main__column section-main__column_left">
+                <div class="section-main__fruit section-main__fruit_basket">
+                  <img src="./images/main-section/basket.png" alt="" />
+                </div>
+                <div class="section-main__fruit section-main__fruit_dinner">
+                  <img src="./images/main-section/fruit-3.png" alt="" />
+                </div>
+              </div>
+              <div class="section-main__column section-main__column_right">
+                <h1 class="section-main__title">The sweetest gift, the most exciting thank you</h1>
+                <button class="section-main__btn">Find best Gift</button>
+                <div class="section-main__fruit section-main__fruit_blackberry">
+                  <img src="./images/main-section/fruit-2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-main__benefits benefits">
+          <div class="benefits__block container">
+            <ul class="benefits__list">
+              <li class="benefits__item">
+                <a href="#" class="benefits__link">
+                  <img src="./images/benefits/benefits-1.png" alt="premium fruit" />
+                  <p class="benefits__benefit">Premium fruit</p>
+                </a>
+              </li>
+              <li class="benefits__separator"></li>
+              <li>
+                <a href="#" class="benefits__link">
+                  <img src="./images/benefits/benefits-2.png" alt="premium fruit" />
+                  <p class="benefits__benefit">Strict review</p>
+                </a>
+              </li>
+              <li class="benefits__separator"></li>
+              <li>
+                <a href="#" class="benefits__link">
+                  <img src="./images/benefits/benefits-3.png" alt="premium fruit" />
+                  <p class="benefits__benefit">Best Service</p>
+                </a>
+              </li>
+              <li class="benefits__separator"></li>
+              <li>
+                <a href="#" class="benefits__link">
+                  <img src="./images/benefits/benefits-4.png" alt="premium fruit" />
+                  <p class="benefits__benefit">Made with love</p>
+                </a>
+              </li>
+            </ul>
+            <div class="section-main__fruit section-main__fruit_strawberry">
+              <img src="./images/main-section/fruit-4.png" alt="" />
+            </div>
+            <div class="section-main__fruit section-main__fruit_rasberry">
+              <img src="./images/main-section/fruit-1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="card-section">
+      <div class="container">
+        <h2 class="card-section__title">We recommend</h2>
+        <ul class="card-section__list list-item">
+          <li class="list-item__wrapper">
+            <div class="list-item__tipe-wrapper"><p class="list-item__tipe">Fruit trays</p></div>
+            <figure class="list-item__img-wrapper">
+              <img class="list-item__img" src="./images/items/photo-1.png" alt="item" />
+            </figure>
+            <h3 class="list-item__title">Phuket Fruit Tray</h3>
+            <div class="list-item__price-block">
+              <div class="list-item__price list-item__price_first">
+                <span>$</span>
+                <span>229.00</span>
+              </div>
+              <div class="list-item__price list-item__price_second">
+                <img src="./images/items/icon-swap.png" alt="cash" />
+                <span>$</span>
+                <span>340.00</span>
+              </div>
+            </div>
+            <div class="list-item__buttons buttons-block">
+              <button class="buttons-block__btn buttons-block__btn_buy">
+                <img src="./images/items/icon-cart.svg" alt="cart" />
+                <p>Buy</p>
+              </button>
+              <button class="buttons-block__btn buttons-block__btn_info">
+                <img src="./images/items/icon-more-info.svg" alt="follow" />
+                <p>More info</p>
+              </button>
+            </div>
+          </li>
+          <li class="list-item__wrapper">
+            <div class="list-item__tipe-wrapper">
+              <p class="list-item__tipe list-item__tipe_baskets">Fruit basket</p>
+            </div>
+            <figure class="list-item__img-wrapper">
+              <img class="list-item__img" src="./images/items/photo-2.png" alt="item" />
+            </figure>
+            <h3 class="list-item__title">MLXL Basket "Seychelles"</h3>
+            <div class="list-item__price-block">
+              <div class="list-item__price list-item__price_first">
+                <span>$</span>
+                <span>269.00</span>
+              </div>
+            </div>
+            <div class="list-item__buttons buttons-block">
+              <button class="buttons-block__btn buttons-block__btn_buy">
+                <img src="./images/items/icon-cart.svg" alt="cart" />
+                <p>Buy</p>
+              </button>
+              <button class="buttons-block__btn buttons-block__btn_info">
+                <img src="./images/items/icon-more-info.svg" alt="follow" />
+                <p>More info</p>
+              </button>
+            </div>
+          </li>
+          <li class="list-item__wrapper">
+            <div class="list-item__tipe-wrapper">
+              <p class="list-item__tipe">Fruit trays</p>
+            </div>
+            <figure class="list-item__img-wrapper">
+              <img class="list-item__img" src="./images/items/photo-3.png" alt="item" />
+            </figure>
+            <h3 class="list-item__title">Every day a holiday of love"</h3>
+            <div class="list-item__price-block">
+              <div class="list-item__price list-item__price_first">
+                <span>$</span>
+                <span>238.00</span>
+              </div>
+            </div>
+            <div class="list-item__buttons buttons-block">
+              <button class="buttons-block__btn buttons-block__btn_buy">
+                <img src="./images/items/icon-cart.svg" alt="cart" />
+                <p>Buy</p>
+              </button>
+              <button class="buttons-block__btn buttons-block__btn_info">
+                <img src="./images/items/icon-more-info.svg" alt="follow" />
+                <p>More info</p>
+              </button>
+            </div>
+          </li>
+          <li class="list-item__wrapper">
+            <div class="list-item__tipe-wrapper">
+              <p class="list-item__tipe list-item__tipe_sushi">Fruit sushi</p>
+            </div>
+            <figure class="list-item__img-wrapper">
+              <img class="list-item__img" src="./images/items/photo-4.png" alt="item" />
+            </figure>
+            <h3 class="list-item__title">Sushi Fruit Delicacy Heaven</h3>
+            <div class="list-item__price-block">
+              <div class="list-item__price list-item__price_first">
+                <span>$</span>
+                <span>170.00</span>
+              </div>
+            </div>
+            <div class="list-item__buttons buttons-block">
+              <button class="buttons-block__btn buttons-block__btn_buy">
+                <img src="./images/items/icon-cart.svg" alt="cart" />
+                <p>Buy</p>
+              </button>
+              <button class="buttons-block__btn buttons-block__btn_info">
+                <img src="./images/items/icon-more-info.svg" alt="follow" />
+                <p>More info</p>
+              </button>
+            </div>
+          </li>
+          <li class="list-item__wrapper">
+            <div class="list-item__tipe-wrapper">
+              <p class="list-item__tipe list-item__tipe_sushi">Fruit sushi</p>
+            </div>
+            <figure class="list-item__img-wrapper">
+              <img class="list-item__img" src="./images/items/photo-5.png" alt="item" />
+            </figure>
+            <h3 class="list-item__title">Fruit delicacy sushi</h3>
+            <div class="list-item__price-block">
+              <div class="list-item__price list-item__price_first">
+                <span>$</span>
+                <span>69.00</span>
+              </div>
+            </div>
+            <div class="list-item__buttons buttons-block">
+              <button class="buttons-block__btn buttons-block__btn_buy">
+                <img src="./images/items/icon-cart.svg" alt="cart" />
+                <p>Buy</p>
+              </button>
+              <button class="buttons-block__btn buttons-block__btn_info">
+                <img src="./images/items/icon-more-info.svg" alt="follow" />
+                <p>More info</p>
+              </button>
+            </div>
+          </li>
+          <li class="list-item__wrapper">
+            <div class="list-item__tipe-wrapper">
+              <p class="list-item__tipe">Fruit trays</p>
+            </div>
+            <figure class="list-item__img-wrapper">
+              <img class="list-item__img" src="./images/items/photo-6.png" alt="item" />
+            </figure>
+            <h3 class="list-item__title">Classic tray "Tenerife"</h3>
+            <div class="list-item__price-block">
+              <div class="list-item__price list-item__price_first">
+                <span>$</span>
+                <span>395.00</span>
+              </div>
+              <div class="list-item__price list-item__price_second">
+                <img src="./images/items/icon-swap.png" alt="cash" />
+                <span>$</span>
+                <span>189.00</span>
+              </div>
+            </div>
+            <div class="list-item__buttons buttons-block">
+              <button class="buttons-block__btn buttons-block__btn_buy">
+                <img src="./images/items/icon-cart.svg" alt="cart" />
+                <p>Buy</p>
+              </button>
+              <button class="buttons-block__btn buttons-block__btn_info">
+                <img src="./images/items/icon-more-info.svg" alt="follow" />
+                <p>More info</p>
+              </button>
+            </div>
+          </li>
+          <li class="list-item__wrapper">
+            <div class="list-item__tipe-wrapper">
+              <p class="list-item__tipe list-item__tipe_baskets">Fruit basket</p>
+            </div>
+            <figure class="list-item__img-wrapper">
+              <img class="list-item__img" src="./images/items/photo-7.png" alt="item" />
+            </figure>
+            <h3 class="list-item__title">Zanzibar-on box -XL</h3>
+            <div class="list-item__price-block">
+              <div class="list-item__price list-item__price_first">
+                <span>$</span>
+                <span>419.00</span>
+              </div>
+              <div class="list-item__price list-item__price_second">
+                <img src="./images/items/icon-swap.png" alt="cash" />
+                <span>$</span>
+                <span>288.00</span>
+              </div>
+            </div>
+            <div class="list-item__buttons buttons-block">
+              <button class="buttons-block__btn buttons-block__btn_buy">
+                <img src="./images/items/icon-cart.svg" alt="cart" />
+                <p>Buy</p>
+              </button>
+              <button class="buttons-block__btn buttons-block__btn_info">
+                <img src="./images/items/icon-more-info.svg" alt="follow" />
+                <p>More info</p>
+              </button>
+            </div>
+          </li>
+          <li class="list-item__wrapper">
+            <div class="list-item__tipe-wrapper">
+              <p class="list-item__tipe">Fruit trays</p>
+            </div>
+            <figure class="list-item__img-wrapper">
+              <img class="list-item__img" src="./images/items/photo-8.png" alt="item" />
+            </figure>
+            <h3 class="list-item__title">Kopenhagen fruit tray</h3>
+            <div class="list-item__price-block">
+              <div class="list-item__price list-item__price_first">
+                <span>$</span>
+                <span>249.00</span>
+              </div>
+            </div>
+            <div class="list-item__buttons buttons-block">
+              <button class="buttons-block__btn buttons-block__btn_buy">
+                <img src="./images/items/icon-cart.svg" alt="cart" />
+                <p>Buy</p>
+              </button>
+              <button class="buttons-block__btn buttons-block__btn_info">
+                <img src="./images/items/icon-more-info.svg" alt="follow" />
+                <p>More info</p>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="card-section__button-wrapper">
+          <button>
+            <img src="./images/items/icon-list-red.svg" alt="show more" /><span
+              >More sweet Gifts</span
+            >
+          </button>
+        </div>
+      </div>
+      <div class="card-section__bottom">
+        <div class="card-section__fruits"><img src="./images/items/fruits.svg" alt="" /></div>
+        <div class="card-section__wave"><img src="./images/items/bottom-wave.svg" alt="" /></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/index.js"></script>
+</html>

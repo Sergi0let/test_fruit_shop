@@ -1,0 +1,423 @@
+// ----------------
+// 1. Header
+// ----------------
+
+.contacts {
+  margin-top: 0px;
+
+  @include to-table {
+    padding: 0px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 4px;
+    padding-top: 8px;
+    padding-bottom: 0px;
+  }
+
+  &__btn-call {
+    font-family: $secondaryFont;
+    white-space: nowrap;
+    border-radius: 12px;
+    border: 2px solid $red-color;
+    background-color: $red-color;
+    padding-left: 17px;
+    padding-right: 17px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 24.75px;
+    transition: all 0.3s ease;
+    margin-right: -11px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: transparent;
+      color: $red-color;
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @include to-lm {
+      display: flex;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 6px;
+
+    @include to-table {
+      margin-right: 0px;
+      &:not(:first-child) {
+        column-gap: 24px;
+        padding-left: 24px;
+
+        &:before {
+          content: '';
+          width: 2px;
+          height: 34px;
+          border-radius: 2px;
+          opacity: 0.1;
+          background: $red-color;
+        }
+      }
+    }
+  }
+}
+
+.item-link {
+  &__link {
+    font-family: $secondaryFont;
+    color: $nav-color;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    font-size: 12px;
+
+    span {
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      color: $red-color;
+      span {
+        border-bottom: 1px solid $red-color;
+      }
+    }
+
+    @include to-sd {
+      font-size: 15px;
+    }
+  }
+
+  &__img {
+    margin-right: 12px;
+  }
+}
+
+.lang-btn {
+  min-width: fit-content;
+  border: 1px solid $red-color;
+  border-radius: 12px;
+  padding: 1px 3px;
+  overflow: hidden;
+  white-space: nowrap;
+
+  &__btn {
+    font-family: $secondaryFont;
+    color: $nav-color;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 400;
+    border: none;
+    background: #fff;
+    padding: 0 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: $red-color;
+    }
+  }
+
+  &__btn._active {
+    height: 80%;
+    background-color: $red-color;
+    border-radius: 9px;
+    padding: 3px 5px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+// ----------------
+// 2. Header
+// ----------------
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: 12px;
+    min-height: 81px;
+  }
+
+  &__logo {
+    img {
+      min-width: 120px;
+      @include to-sm {
+        min-width: 174px;
+      }
+      @include to-sd {
+        min-width: 191px;
+      }
+    }
+  }
+}
+
+.list-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 12px;
+
+  @include to-table {
+    column-gap: 20px;
+  }
+
+  &__list {
+    display: none;
+    @include to-lm {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin-right: 9px;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    @include to-sd {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 30px;
+      }
+    }
+    img {
+      margin-left: -2px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    color: $red-color;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-bottom: 1px solid $red-color;
+    }
+  }
+
+  &__search-wrapper {
+    display: none;
+
+    @include to-sm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid $red-color;
+      cursor: pointer;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      background-color: $red-color;
+      img {
+        content: url('./images/header-img/icon-search-white.svg  ');
+      }
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid $red-color;
+      cursor: pointer;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  background: $red-color;
+  color: #fff;
+  border-radius: 40px;
+  border: 2px solid $red-color;
+  transition: all 0.3s ease;
+
+  font-size: 14px;
+  cursor: pointer;
+  @include to-sm {
+    width: 138px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+
+  &__sum {
+    display: inline-block;
+    font-size: 15px;
+    transform: translate(5px, 3px);
+  }
+
+  &__img {
+    transition: all 0.3s ease;
+  }
+
+  &__amount {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -7px;
+    right: -7px;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 50%;
+
+    font-size: 12px;
+    color: $red-color;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $red-color;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: $red-color;
+    img {
+      content: url('./images/header-img/icon-cart-red.svg');
+    }
+  }
+}
+
+//Burger
+
+.icon-menu {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 5;
+  margin-left: 14px;
+  span,
+  &::before,
+  &::after {
+    content: '';
+    transition: all 0.3s ease 0s;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  span {
+    top: calc(50% - 1px);
+  }
+  .menu-open & {
+    span {
+      width: 0;
+    }
+    // &::before,
+    // &::after {
+    // }
+    &::before {
+      top: calc(50% - 1px);
+      transform: rotate(-45deg);
+    }
+    &::after {
+      bottom: calc(50% - 1px);
+      transform: rotate(45deg);
+    }
+  }
+  @include to-lm {
+    display: none;
+  }
+}
+
+.menu {
+  left: -100%;
+  position: absolute;
+  top: 85px;
+  margin: 0 auto;
+  padding: 8px 20px;
+  background-color: #fff;
+  width: 100%;
+  border: 2px solid $red-color;
+  border-radius: 24px;
+  overflow: auto;
+  transition: all 0.3s ease;
+  overflow: hidden;
+
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  &__swap-features {
+    li,
+    a {
+      font-size: 18px;
+      padding: 4px 0;
+      text-align: center;
+    }
+  }
+  &__swap-contact {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.menu.active-menu {
+  left: 0;
+}
