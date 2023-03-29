@@ -10,7 +10,7 @@
   &__wrapper {
     position: relative;
     height: 100%;
-    background: url('../images/main-section/bg.png') center/cover no-repeat;
+    background: url('./images/main-section/bg.png') center/cover no-repeat;
     img {
       position: absolute;
       top: 0;
@@ -309,7 +309,7 @@
         background: $red-color;
         color: #fff;
         img {
-          content: url('../images/items/icon-list-white.svg');
+          content: url('./images/items/icon-list-white.svg');
         }
       }
     }
@@ -330,7 +330,7 @@
   }
 
   &::before {
-    background: url('../images/items/fruit-5.png') center no-repeat;
+    background: url('./images/items/fruit-5.png') center no-repeat;
     width: 250px;
     height: 350px;
     top: 90px;
@@ -338,7 +338,7 @@
   }
 
   &::after {
-    background: url('../images/items/fruit-6.png') center no-repeat;
+    background: url('./images/items/fruit-6.png') center no-repeat;
     width: 230px;
     height: 345px;
     bottom: -90px;
@@ -474,7 +474,7 @@
         background: #fff;
         color: $red-color;
         img {
-          content: url('../images/items/icon-cart-red.svg');
+          content: url('./images/items/icon-cart-red.svg');
         }
       }
     }

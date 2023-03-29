@@ -365,9 +365,7 @@
     span {
       width: 0;
     }
-    // &::before,
-    // &::after {
-    // }
+
     &::before {
       top: calc(50% - 1px);
       transform: rotate(-45deg);
