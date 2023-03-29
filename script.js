@@ -12,10 +12,5 @@ function menuInit() {
     });
   }
 }
-// function menuOpen() {
-//   document.documentElement.classList.add('menu-open');
-// }
-// function menuClose() {
-//   document.documentElement.classList.remove('menu-open');
-// }
+
 menuInit();
