@@ -1,4 +1,4 @@
-#Fruit Shop
+# Fruit Shop
 This is a simple web project called "Fruit Shop", which allows users to view a list of fruit items available for purchase. The project is built using HTML, SCSS, and JavaScript, and is responsive for screen sizes ranging from 320px to 1400px.
 
 Features
