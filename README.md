@@ -1,19 +1,9 @@
-<h1>Price-cards-layout</h1>
+#Fruit Shop
+This is a simple web project called "Fruit Shop", which allows users to view a list of fruit items available for purchase. The project is built using HTML, SCSS, and JavaScript, and is responsive for screen sizes ranging from 320px to 1400px.
 
-<a href="https://sergi0let.github.io/Price-cards-layout/">Site link</a>
-<br />
+Features
+Fixed header: The project has a fixed header that remains visible as users scroll through the page, providing easy access to the navigation menu and shopping cart.
+Main section: The main section of the project contains a list of fruit items available for purchase, along with their images and prices.
+Responsive design: The project has been designed to be responsive across different screen sizes, ensuring that the user experience is consistent and accessible across a wide range of devices.
 
-<p>Three adaptive price card in row. Width layout 1440px</p>
-
-<h3>The tech stack is:</h3>
-<ul>
-  <li>HTML5</li>
-  <li>CSS3</li>
-  <li>CSS3</li>
-  <li>Flexbox</li>
-  <li>Sass (Scss)</li>
-  <li>BEM methodology</li>
-
-</ul>
-<br />
-<h5>Sergij Vashkevych</h5>
+Stack: HTML, SCSS, JS
