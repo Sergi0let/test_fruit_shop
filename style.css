@@ -88,8 +88,7 @@ video {
 a {
   text-decoration: none;
 }
-a:active,
-a:hover {
+a:active, a:hover {
   outline: 0;
 }
 
@@ -197,7 +196,7 @@ html {
 }
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 17px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -287,7 +286,7 @@ li {
   padding-bottom: 0px;
 }
 .contacts__btn-call {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   white-space: nowrap;
   border-radius: 12px;
   border: 2px solid #db1e46;
@@ -330,7 +329,7 @@ li {
     padding-left: 24px;
   }
   .contacts__item:not(:first-child):before {
-    content: '';
+    content: "";
     width: 2px;
     height: 34px;
     border-radius: 2px;
@@ -340,7 +339,7 @@ li {
 }
 
 .item-link__link {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #7c5a5b;
   white-space: nowrap;
   transition: all 0.3s ease;
@@ -374,7 +373,7 @@ li {
   white-space: nowrap;
 }
 .lang-btn__btn {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #7c5a5b;
   white-space: nowrap;
   transition: all 0.3s ease;
@@ -498,7 +497,7 @@ li {
   background-color: #db1e46;
 }
 .list-items__search-wrapper:hover img {
-  content: url('./images/header-img/icon-search-white.svg  ');
+  content: url("./images/header-img/icon-search-white.svg  ");
 }
 .list-items__search-wrapper__menu {
   display: flex;
@@ -519,7 +518,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 125px;
   height: 40px;
   background: #db1e46;
   color: #fff;
@@ -573,7 +572,7 @@ li {
   color: #db1e46;
 }
 .cart:hover img {
-  content: url('./images/header-img/icon-cart-red.svg');
+  content: url("./images/header-img/icon-cart-red.svg");
 }
 
 .icon-menu {
@@ -587,10 +586,8 @@ li {
   z-index: 5;
   margin-left: 14px;
 }
-.icon-menu span,
-.icon-menu::before,
-.icon-menu::after {
-  content: '';
+.icon-menu span, .icon-menu::before, .icon-menu::after {
+  content: "";
   transition: all 0.3s ease 0s;
   right: 0;
   position: absolute;
@@ -671,7 +668,7 @@ li {
 .section-main__wrapper {
   position: relative;
   height: 100%;
-  background: url('../images/main-section/bg.png') center/cover no-repeat;
+  background: url("./images/main-section/bg.png") center/cover no-repeat;
 }
 .section-main__wrapper img {
   position: absolute;
@@ -770,7 +767,7 @@ li {
   }
 }
 .section-main__btn {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   width: 295px;
   height: 80px;
   background: #fbc400;
@@ -786,11 +783,7 @@ li {
   transition: all 0.3s ease;
 }
 .section-main__btn:hover {
-  background: linear-gradient(
-    310.89deg,
-    rgba(251, 197, 0, 0.3) 43.38%,
-    rgba(255, 255, 255, 0) 70.08%
-  );
+  background: linear-gradient(310.89deg, rgba(251, 197, 0, 0.3) 43.38%, rgba(255, 255, 255, 0) 70.08%);
   color: #fff;
 }
 @media (min-width: 640px) {
@@ -865,7 +858,7 @@ li {
   }
 }
 .benefits__benefit {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 12px;
   color: #70af00;
@@ -960,7 +953,7 @@ li {
   color: #fff;
 }
 .card-section__button-wrapper button:hover img {
-  content: url('../images/items/icon-list-white.svg');
+  content: url("./images/items/icon-list-white.svg");
 }
 
 .list-item {
@@ -969,21 +962,20 @@ li {
   position: relative;
   gap: 30px;
 }
-.list-item::before,
-.list-item::after {
-  content: '';
+.list-item::before, .list-item::after {
+  content: "";
   position: absolute;
   z-index: 1;
 }
 .list-item::before {
-  background: url('../images/items/fruit-5.png') center no-repeat;
+  background: url("./images/items/fruit-5.png") center no-repeat;
   width: 250px;
   height: 350px;
   top: 90px;
   left: -260px;
 }
 .list-item::after {
-  background: url('../images/items/fruit-6.png') center no-repeat;
+  background: url("./images/items/fruit-6.png") center no-repeat;
   width: 230px;
   height: 345px;
   bottom: -90px;
@@ -1053,7 +1045,7 @@ li {
 }
 .list-item__price {
   margin-top: 13px;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   font-style: normal;
   font-size: 20px;
   line-height: 120%;
@@ -1106,7 +1098,7 @@ li {
   color: #db1e46;
 }
 .buttons-block__btn_buy:hover img {
-  content: url('../images/items/icon-cart-red.svg');
+  content: url("./images/items/icon-cart-red.svg");
 }
 .buttons-block__btn_info {
   margin-left: 2px;
@@ -1120,4 +1112,4 @@ li {
   border-color: #db1e46;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
